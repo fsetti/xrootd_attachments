@@ -1,0 +1,85 @@
+[chirp] No condor_chirp :(
+
+--- begin header output ---
+
+OUTPUTDIR: /hadoop/cms/store/user/fsetti/nanoAOD_runII/NMSSM_test3_STEP3_v1/
+OUTPUTNAME: output
+INPUTFILENAMES: /hadoop/cms/store/user/fsetti/nanoAOD_runII/NMSSM_test3_STEP2_v1/output_1.root
+IFILE: 1
+PSET: pset.py
+CMSSWVERSION: CMSSW_10_6_4
+SCRAMARCH: slc7_amd64_gcc700
+NEVTS: -1
+EXPECTEDNEVTS: 0
+OTHEROUTPUTS: None
+PSETARGS: print
+GLIDEIN_CMSSite: T2_US_UCSD
+hostname: mh-epyc7662-4.t2.ucsd.edu
+uname -a: Linux mh-epyc7662-4.t2.ucsd.edu 3.10.0-1160.15.2.el7.x86_64 #1 SMP Wed Feb 3 15:06:38 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+time: 1637204515
+args: /hadoop/cms/store/user/fsetti/nanoAOD_runII/NMSSM_test3_STEP3_v1/ output /hadoop/cms/store/user/fsetti/nanoAOD_runII/NMSSM_test3_STEP2_v1/output_1.root 1 pset.py CMSSW_10_6_4 slc7_amd64_gcc700 -1 -1 0 None print
+tag: v1
+taskname: CMSSWTask_NMSSM_test3_STEP3_v1
+
+--- end header output ---
+
+sourcing environment: source /cvmfs/oasis.opensciencegrid.org/cmssoft/cms/cmsset_default.sh
+this is a selective cmssw tar file
+>> Local Products Rules ..... started
+>> Local Products Rules ..... done
+>> Building CMSSW version CMSSW_10_6_4 ----
+>> Subsystem BigProducts built
+gmake[1]: Entering directory '/srv/CMSSW_10_6_4'
+>> Local Products Rules ..... started
+>> Local Products Rules ..... done
+>> Creating project symlinks
+>> Done python_symlink
+>> Compiling python modules cfipython/slc7_amd64_gcc700
+>> Compiling python modules python
+>> All python modules compiled
+>> Plugins of all types refreshed.
+>> Done generating edm plugin poisoned information
+gmake[1]: Leaving directory '/srv/CMSSW_10_6_4'
+before running: ls -lrth
+total 23M
+drwxr-xr-x. 4 cuser cuser 4.0K Sep 20  2019 config
+-rw-rw-r--. 1 cuser cuser  23M Nov 17 19:01 pset.py
+drwxr-xr-x. 2 cuser cuser   10 Nov 17 19:01 src
+drwxr-xr-x. 3 cuser cuser   39 Nov 17 19:01 lib
+drwxr-xr-x. 3 cuser cuser   39 Nov 17 19:01 test
+drwxr-xr-x. 3 cuser cuser   39 Nov 17 19:01 objs
+drwxr-xr-x. 3 cuser cuser   39 Nov 17 19:01 logs
+drwxr-xr-x. 3 cuser cuser   39 Nov 17 19:01 bin
+drwxr-xr-x. 3 cuser cuser   39 Nov 17 19:01 static
+drwxr-xr-x. 2 cuser cuser   10 Nov 17 19:01 include
+drwxr-xr-x. 2 cuser cuser   10 Nov 17 19:01 doc
+drwxr-xr-x. 3 cuser cuser   39 Nov 17 19:01 cfipython
+drwxr-xr-x. 3 cuser cuser   39 Nov 17 19:01 biglib
+drwxrwxr-x. 3 cuser cuser   39 Nov 17 19:02 external
+drwxr-xr-x. 4 cuser cuser   57 Nov 17 19:02 tmp
+drwxr-xr-x. 2 cuser cuser   33 Nov 17 19:02 python
+
+--- begin running ---
+
+[chirp] Chirped ChirpMetisExpectedNevents => 0 with exit code 0
+[chirp] Chirped ChirpMetisStatus => before_cmsRun with exit code 0
+[chirp] Chirped ChirpMetisStatus => after_cmsRun with exit code 0
+after running: ls -lrth
+total 23M
+drwxr-xr-x. 4 cuser cuser 4.0K Sep 20  2019 config
+drwxr-xr-x. 2 cuser cuser   10 Nov 17 19:01 src
+drwxr-xr-x. 3 cuser cuser   39 Nov 17 19:01 lib
+drwxr-xr-x. 3 cuser cuser   39 Nov 17 19:01 test
+drwxr-xr-x. 3 cuser cuser   39 Nov 17 19:01 objs
+drwxr-xr-x. 3 cuser cuser   39 Nov 17 19:01 logs
+drwxr-xr-x. 3 cuser cuser   39 Nov 17 19:01 bin
+drwxr-xr-x. 3 cuser cuser   39 Nov 17 19:01 static
+drwxr-xr-x. 2 cuser cuser   10 Nov 17 19:01 include
+drwxr-xr-x. 2 cuser cuser   10 Nov 17 19:01 doc
+drwxr-xr-x. 3 cuser cuser   39 Nov 17 19:01 cfipython
+drwxr-xr-x. 3 cuser cuser   39 Nov 17 19:01 biglib
+drwxrwxr-x. 3 cuser cuser   39 Nov 17 19:02 external
+drwxr-xr-x. 4 cuser cuser   57 Nov 17 19:02 tmp
+drwxr-xr-x. 2 cuser cuser   33 Nov 17 19:02 python
+-rw-rw-r--. 1 cuser cuser  23M Nov 17 19:02 pset.py
+Removing output file because cmsRun crashed with exit code 0

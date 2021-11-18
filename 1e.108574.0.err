@@ -1,0 +1,39 @@
+WARNING  String '/execute/dir_' in X509_USER_CERT (/condor/condor_local/execute/dir_125638/glide_acHotG/hostcert.pem), the conversion to run in Singularity may be incorrect
+WARNING  String '/execute/dir_' in X509_USER_KEY (/condor/condor_local/execute/dir_125638/glide_acHotG/hostkey.pem), the conversion to run in Singularity may be incorrect
+WARNING  String '/execute/dir_' in _CONDOR_EXECUTE (/condor/condor_local/execute/dir_125638/glide_acHotG/execute), the conversion to run in Singularity may be incorrect
+tar: package.tar.gz: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+WARNING: In non-interactive mode release checks e.g. deprecated releases, production architectures are disabled.
+cp: cannot stat '/srv/CMSSW_10_6_4/src/ZZMatrixElement/MELA/data/slc7_amd64_gcc700/*.so': No such file or directory
+17-Nov-2021 19:02:45 PST  Initiating request to open file /hadoop/cms/store/user/fsetti/nanoAOD_runII/NMSSM_test3_STEP2_v1/output_1.root
+17-Nov-2021 19:02:47 PST  Successfully opened file /hadoop/cms/store/user/fsetti/nanoAOD_runII/NMSSM_test3_STEP2_v1/output_1.root
+17-Nov-2021 19:02:58 PST  Initiating request to open file /hadoop/cms/phedex/store/mc/RunIISummer19ULPrePremix/Neutrino_E-10_gun/PREMIX/UL17_106X_mc2017_realistic_v6-v1/120000/BB8BCCD0-1D07-F046-8720-4ACF7FA7F0B7.root
+17-Nov-2021 19:02:58 PST  Fallback request to file root://cmsxrootd.fnal.gov//store/mc/RunIISummer19ULPrePremix/Neutrino_E-10_gun/PREMIX/UL17_106X_mc2017_realistic_v6-v1/120000/BB8BCCD0-1D07-F046-8720-4ACF7FA7F0B7.root
+%MSG-w XrdAdaptorInternal:  PreMixingModule:mixData@ctor  17-Nov-2021 19:04:30 PST pre-events
+Failed to open file at URL root://cms-xrd-global.cern.ch:1094//store/mc/RunIISummer19ULPrePremix/Neutrino_E-10_gun/PREMIX/UL17_106X_mc2017_realistic_v6-v1/120000/BB8BCCD0-1D07-F046-8720-4ACF7FA7F0B7.root?tried=+1213cmsxrootd2.fnal.gov1213xrootd.unl.edu.
+%MSG
+%MSG-w XrdAdaptorInternal:  PreMixingModule:mixData@ctor  17-Nov-2021 19:04:31 PST pre-events
+Failed to open file at URL root://cms-xrd-global.cern.ch:1094//store/mc/RunIISummer19ULPrePremix/Neutrino_E-10_gun/PREMIX/UL17_106X_mc2017_realistic_v6-v1/120000/BB8BCCD0-1D07-F046-8720-4ACF7FA7F0B7.root?tried=+1213cmsxrootd2.fnal.gov1213xrootd.unl.edu,.
+%MSG
+17-Nov-2021 19:04:31 PST  Closed file /hadoop/cms/store/user/fsetti/nanoAOD_runII/NMSSM_test3_STEP2_v1/output_1.root
+----- Begin Fatal Exception 17-Nov-2021 19:04:31 PST-----------------------
+An exception of category 'FallbackFileOpenError' occurred while
+   [0] Constructing the EventProcessor
+   [1] Constructing module: class=PreMixingModule label='mixData'
+   [2] Calling RootFileSequenceBase::initTheFile()
+   [3] Calling StorageFactory::open()
+   [4] Calling XrdFile::open()
+Exception Message:
+Failed to open the file 'root://cmsxrootd.fnal.gov//store/mc/RunIISummer19ULPrePremix/Neutrino_E-10_gun/PREMIX/UL17_106X_mc2017_realistic_v6-v1/120000/BB8BCCD0-1D07-F046-8720-4ACF7FA7F0B7.root'
+   Additional Info:
+      [a] open() failed with system error 'No such file or directory' (error code 2)
+      [b] Input file /hadoop/cms/phedex/store/mc/RunIISummer19ULPrePremix/Neutrino_E-10_gun/PREMIX/UL17_106X_mc2017_realistic_v6-v1/120000/BB8BCCD0-1D07-F046-8720-4ACF7FA7F0B7.root could not be opened.
+Fallback Input file root://cmsxrootd.fnal.gov//store/mc/RunIISummer19ULPrePremix/Neutrino_E-10_gun/PREMIX/UL17_106X_mc2017_realistic_v6-v1/120000/BB8BCCD0-1D07-F046-8720-4ACF7FA7F0B7.root also could not be opened.
+Original exception info is above; fallback exception info is below.
+      [c] XrdCl::File::Open(name='root://cmsxrootd.fnal.gov//store/mc/RunIISummer19ULPrePremix/Neutrino_E-10_gun/PREMIX/UL17_106X_mc2017_realistic_v6-v1/120000/BB8BCCD0-1D07-F046-8720-4ACF7FA7F0B7.root', flags=0x10, permissions=0660) => error '[ERROR] Server responded with an error: [3011] No servers are available to read the file.
+' (errno=3011, code=400). No additional data servers were found.
+      [d] Last URL tried: root://cms-xrd-global.cern.ch:1094//store/mc/RunIISummer19ULPrePremix/Neutrino_E-10_gun/PREMIX/UL17_106X_mc2017_realistic_v6-v1/120000/BB8BCCD0-1D07-F046-8720-4ACF7FA7F0B7.root?tried=+1213cmsxrootd2.fnal.gov1213xrootd.unl.edu,
+      [e] Problematic data server: cms-xrd-global.cern.ch:1094
+      [f] Disabled source: cms-xrd-global.cern.ch:1094
+----- End Fatal Exception -------------------------------------------------
+rm: cannot remove 'output.root': No such file or directory
